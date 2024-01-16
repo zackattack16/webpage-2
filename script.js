@@ -17,3 +17,12 @@ function checkNumber() {
         feedbackBox.innerText = "just right";
     }
 }
+const inBox = document.getElementById("in");
+const outBox = document.getElementById("out");
+
+inBox.addEventListener("change", changeOut);
+
+function changeOut() {
+    const x = inBox.value;
+    outBox.innerText = x*x
+}
